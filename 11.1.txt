@@ -10,11 +10,10 @@ What is the use of OnUpgrade function in SQLiteOpenHelper class?
 Evryclass that extends SQLiteOpenHelper must implement onUpgrade method, 
 this method is called whenever the DB is upgraded such as altering table structure adding columns version change etc. 
 This is automatically called whenver there is a version change in the DB.
-All the changes that has to be performed related to DB changes must be done here
+All the changes that has to be performed related to DB changes must be done here. It is necessary to class onCreate whenever  we are alerting the structure of tables..
 
 How to show SQLite database table information in Android application what is the best
 way to do it?
-
 The information present in Table can be fetched using cursor. Cursors can be used to loop through the data that is present in the tables, it has inbuilt method .moveNext() to iterate throug the records
 It also has many inbuilt methods which will help use to traverse easily through the data. Data can be fetched through method like .getString(),getInt.. etc
 
